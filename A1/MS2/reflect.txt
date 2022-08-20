@@ -1,0 +1,19 @@
+*****************************************************************************
+                        Assignment 1 - Milestone 2
+Full Name  :Jiaheng Wang
+Student ID#:180562217
+Email      :jwang522@myseneca.ca
+Section    :NNN
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. One factor to consider when naming a C module is that the name should reflect the functions performed by the module, and the name should be meaningful and readable for other programmers.
+It is a suggested best practice to identify a library's header and source code files using the same name because it is easy to find the function prototype corresponding to the function definition in the header file and source file. When we write libraries for main.c file, we should connect all functions together to compile the program easily. For example, in this assignment, core.h comes with core.c while clinic.h comes with clinic.c. They are all attached to a1ms2.c. It is convenient for us to find all functions prototype for core.c in core.h, and all functions prototype for clinic.c in clinic.h. 
+
+2. The reason we use two modules for the program is that they have different types of functions. In the core module, we defined many general functions which can be used in some other programs. However, in the clinic module, the functions we defined are more specific. They can be only used in clinic aspects. We split them into two different modules to distinguish the different functions and applications.
+
+3. The benefit of splitting into header file and an implementation file is to make the program clear and easy to read. When we write a huge size of the program, it is hard to find each function and definition if we put all files and codes together. In addition, it is easy to debug when we can read a clear program. The better the header files are organized the less work the compiler has to do to apply changes. When we want to update our program, maybe we just need to update one part of code in one function. The division will help us to find that function quickly and easily. For example, in our application, we just want to update the "search" function, and we can only modify that part code. Therefore, we split the program into different files.

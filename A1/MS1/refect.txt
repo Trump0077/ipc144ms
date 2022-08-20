@@ -1,0 +1,17 @@
+*****************************************************************************
+                        Assignment 1 - Milestone 1
+Full Name  :Jiaheng Wang
+Student ID#:180562217
+Email      :jwang522@myseneca.ca
+Section    :NNN
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. The most challenging function for me is inputCharOption. I do not know how to match the input characters with what we need because there are many characters but we need to return only one single character value to match the input characters. I need to separate the string into single characters, and then determine if it matches the result. I tried many ways, such as inputting the characters one by one. Finally, the professor give us some hints to define an idx function to store an address for the string and then search for the same character of the result in the string. However, I still tested many times to figure out the bugs. It is really hard to prepare a function in three files, main code, header file, and function code. Finally, I used debug tools to figure that function out.
+
+2. The difference between assigning 0 and NULL is that they are initialized for the different types of variables. For example, when we initialize a pointer, we should use NULL; when we initialize an int, we should use 0; when we initialize characters, we should use {'\0'}; and when we initialize a double, we can use 0.0. Because they represent the different data types. Pointers are the value to store an address, so we should use NULL to present it as empty. If we use 0 to initialize a pointer, it presents the pointer storing the value of 0. Thus, it is not empty.
+
+3. When we input something by pressing the keys on the keyboard, the computer will record this information or data into the standard input buffer area first, and then it will be sent to the program and run the next steps. Buffer can increase the speed of operating and calculating. For example, the computer has ROM and RAM. Buffer is the same as RAM. It can store the data for a while, but not a long time. When we do some operation to clear the input buffer, the buffer area will be empty, and ready to store the next information. Sometimes, if we do not clear the buffer, some new input data will not be stored in the buffer. Then, we may still operate the old data which is still in the buffer.
